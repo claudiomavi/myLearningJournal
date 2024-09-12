@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+	border-bottom: 1px solid black; /* quitar después */
+}
+
+.left-header {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5em;
+}
+
+.left-header h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.85rem;
+}
+
+.right-header {
+	display: flex;
+	column-gap: 1em;
+}
+
+.right-header h4 {
+	font-weight: 500;
+	font-size: 0.75rem;
+}

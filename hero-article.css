@@ -175,6 +175,7 @@ footer p {
 		margin: 0 auto;
 		width: 90%;
 		height: 40vh;
+		object-fit: cover;
 	}
 
 	.title,

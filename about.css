@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+.left-header {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5em;
+}
+
+.left-header h3 {
+	color: #0e0e0e;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.85rem;
+}
+
+.right-header ul {
+	display: flex;
+	column-gap: 1em;
+	list-style: none;
+}
+
+.right-header li {
+	font-weight: 500;
+	font-size: 0.75rem;
+}
+
+li a {
+	color: #090909;
+}
+
+/* MAIN */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	padding: 1.25em;
+	gap: 0.57em;
+}
+
+section img {
+	padding-bottom: 0.31em;
+	width: 100%;
+}
+
+section h4 {
+	color: #000;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+section h2 {
+	color: #141414;
+	font-size: 1.5rem;
+	line-height: 108.2%;
+}
+
+section p {
+	color: #505050;
+	font-size: 1rem;
+	line-height: 125%;
+}
+
+.no-display {
+	display: none;
+}
+
+/* MAIN HERO */
+.hero {
+	gap: 1em;
+}
+
+.hero h2 {
+	color: #151515;
+	font-size: 2.17738rem;
+	line-height: 108.2%;
+	padding-bottom: 1rem;
+}
+
+.hero p {
+	color: #151515;
+	font-size: 1rem;
+	font-weight: 300;
+	padding-bottom: 1em;
+}
+
+.hero h3 {
+	padding-bottom: 1em;
+}
+
+.hero img {
+	width: 50%;
+}
+
+.title,
+.text {
+	margin: 0 auto;
+	width: 95%;
+}
+
+.title p {
+	padding-bottom: 2em;
+}
+
+.recent {
+	color: #000;
+	font-size: 1rem;
+	padding: 1em;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2em;
+	background-color: #202020;
+}
+
+footer h4 {
+	font-size: 0.75rem;
+	line-height: 108.2%;
+	color: #ececec;
+}
+
+footer p {
+	font-size: 0.75rem;
+	line-height: 125%;
+	color: #d7d7d7;
+}
+
+/* MEDIA QUERYS */
+
+@media (min-width: 768px) {
+	.articles {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.62em;
+		padding: 3.31em;
+		padding-top: 1.75em;
+	}
+
+	.articles section {
+		padding: 0;
+	}
+
+	.recent {
+		font-size: 1.5rem;
+		padding: 2em 0 0 0;
+	}
+
+	.title-container {
+		width: 95%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 2em;
+		padding-bottom: 2em;
+	}
+
+	.title p {
+		padding: 0;
+	}
+
+	.hero h2 {
+		font-size: 2.25rem;
+		padding-bottom: 1rem;
+	}
+
+	.hero img {
+		width: 20%;
+	}
+
+	.title,
+	.text {
+		margin: 0 auto;
+		width: 80%;
+	}
+}

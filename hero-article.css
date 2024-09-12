@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+.left-header {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5em;
+}
+
+.left-header h3 {
+	color: #0e0e0e;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.85rem;
+}
+
+.right-header ul {
+	display: flex;
+	column-gap: 1em;
+	list-style: none;
+}
+
+.right-header li {
+	font-weight: 500;
+	font-size: 0.75rem;
+}
+
+li a {
+	color: #090909;
+}
+
+/* MAIN */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	padding: 1.25em;
+	gap: 0.57em;
+}
+
+section img {
+	padding-bottom: 0.31em;
+	width: 100%;
+}
+
+section h4 {
+	color: #000;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+section h2 {
+	color: #141414;
+	font-size: 1.5rem;
+	line-height: 108.2%;
+}
+
+section p {
+	color: #505050;
+	font-size: 1rem;
+	line-height: 125%;
+}
+
+.no-display {
+	display: none;
+}
+
+/* MAIN HERO */
+.hero {
+	gap: 1em;
+}
+
+.hero h4 {
+	padding-top: 2em;
+	color: #151515;
+	font-size: 0.75rem;
+}
+
+.hero h2 {
+	color: #151515;
+	font-size: 2rem;
+	line-height: 108.2%;
+}
+
+.hero p {
+	color: #151515;
+	font-size: 1rem;
+	font-weight: 300;
+	padding-bottom: 1em;
+}
+
+.recent {
+	color: #000;
+	font-size: 1rem;
+	padding: 1em;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2em;
+	background-color: #202020;
+}
+
+footer h4 {
+	font-size: 0.75rem;
+	line-height: 108.2%;
+	color: #ececec;
+}
+
+footer p {
+	font-size: 0.75rem;
+	line-height: 125%;
+	color: #d7d7d7;
+}
+
+/* MEDIA QUERYS */
+
+@media (min-width: 768px) {
+	.articles {
+		display: grid;
+		grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+		gap: 1.62em;
+		padding: 3.31em;
+	}
+
+	.articles section {
+		padding: 0;
+	}
+
+	.no-display {
+		display: block;
+	}
+
+	.hero h4 {
+		font-size: 1rem;
+		padding-top: 17.94em;
+		color: #fff;
+	}
+
+	.hero h2 {
+		font-size: 2.5rem;
+	}
+
+	.hero h4,
+	.hero h2,
+	.hero p {
+		max-width: 70%;
+	}
+}

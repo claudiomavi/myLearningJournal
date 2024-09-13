@@ -30,10 +30,27 @@ header {
 	font-size: 0.85rem;
 }
 
-.right-header ul {
+.right-header {
 	display: flex;
+	gap: 1em;
+}
+
+.right-header ul {
 	column-gap: 1em;
 	list-style: none;
+	opacity: 0;
+	display: none;
+	transition: opacity 0.5s ease;
+}
+
+.right-header ul.show {
+	display: flex;
+	opacity: 1;
+}
+
+.right-header ul.hide {
+	opacity: 0;
+	transition: opacity 0.5s ease;
 }
 
 .right-header li {
@@ -43,6 +60,10 @@ header {
 
 li a {
 	color: #090909;
+}
+
+#bars {
+	cursor: pointer;
 }
 
 /* MAIN */

@@ -178,6 +178,15 @@ footer p {
 /* MEDIA QUERYS */
 
 @media (min-width: 768px) {
+	.right-header ul {
+		display: flex;
+		opacity: 1;
+	}
+
+	#bars {
+		display: none;
+	}
+
 	.articles {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

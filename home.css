@@ -106,6 +106,7 @@ section p {
 }
 
 .view-more {
+	cursor: pointer;
 	color: #000;
 	font-size: 1rem;
 	text-decoration-line: underline;
@@ -164,6 +165,15 @@ footer p {
 /* MEDIA QUERYS */
 
 @media (min-width: 768px) {
+	.right-header ul {
+		display: flex;
+		opacity: 1;
+	}
+
+	#bars {
+		display: none;
+	}
+
 	.articles {
 		display: grid;
 		grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -193,5 +203,9 @@ footer p {
 	.hero h2,
 	.hero p {
 		max-width: 70%;
+	}
+
+	.view-more {
+		display: none;
 	}
 }

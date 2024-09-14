@@ -16,3 +16,5 @@ bars.addEventListener('click', function () {
 		}, 10)
 	}
 })
+
+// Esta es una prueba
